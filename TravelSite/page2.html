@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Budget Travel Page by Emmanuel Mejia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="index.html">Return Home</a> |
+  <a href="index.html#UnorderedList"> Travel Destinations List</a>
+  <h2>Ready to book your flight?
+    <br>Your destination awaits you below.</br>
+  </h2>
+
+
+  <form>
+    Name: <input type="text" name="name" required="required"><br>
+    Message: <input type="text" name="msg"><br>
+    Password: <input type="password" name="pwd"><br>
+    Date: <input type="date" name="dob">
+    <table>
+      <tr>
+        <td valign="top">
+          Top Destinations:<br>
+          <select name="City">
+            <option value="MEX">Mexico City</option>
+            <option value="CUN">Cancun</option>
+            <option value="GDL">Guadalajara</option>
+            <option value="PVR">Puerto Vallarta</option>
+            <option value="SJD">Los Cabos</option>
+            <option value="DGO">Durango</option>
+            <option value="TIJ">Tijuana</option>
+            <option value="PBC">Puebla</option>
+            <option value="QRO">Queretaro</option>
+            <option value="TRC">Torreon</option>
+            <option value="OAX">Oaxaca</option>
+          </select>
+        </td>
+        <td>
+          Seat Class:<br>
+            <input type="radio" name="seatClass" value="firstClass" checked>First Class<br>
+            <input type="radio" name="seatClass" value="busClass">Business Class<br>
+            <input type="radio" name="seatClass" value="economyClass">Economy Class
+        </td>
+        <td>
+          Payment:<br>
+            <input type="radio" name="pmt" value="cash" checked>Cash<br>
+            <input type="radio" name="pmt" value="credit">Credit<br>
+            <input type="radio" name="pmt" value="debit">Debit
+        </td>
+        <td valign="top">
+            Other:<br>
+            <input type="checkbox" name="member" value="member">I am a rewards member.<br>
+            <input type="checkbox" name="member" value="nonMember">Check out as guest.
+        </td>          
+      </tr>
+    </table>
+    <input type="submit" value="Submit Form">   <input type="reset" value="Clear">
+  </form>
+  
+<hr>  
+
+  <table border="2"> <!-- start of table definition -->
+    <caption> Starting Rates from LAX: </caption>    <!-- caption definition -->
+    <tr>   <!-- start of header row definition -->
+        <th> Mexico City, DF</th>    
+        <th> Puebla </th> 
+        <th> Durango </th>     
+    </tr>  <!-- end of header row definition -->
+    <tr>  <!-- start of first row definition -->
+      <td> 1-3 Days: $679.99<i>per passengar.</i> </td>
+      <td> 1-3 Days: $729.99<i>per passengar.</i> </td>
+      <td> 1-3 Days: $389.99<i>per passengar.</i> </td>  
+    </tr>  <!-- end of first row definition -->
+    <tr>   <!-- start of last row definition -->
+      <td> 4-7 Days: $989.99<i>per passengar.</i> </td>
+      <td> 4-7 Days: $1199.99<i>per passengar.</i> </td>
+      <td> 4-7 Days: $599.99<i>per passengar.</i> </td>   
+    </tr> <!-- end of last row definition -->
+    <tr>   <!-- start of last row definition -->
+      <td> 8-11 Days: $1499.99<i>per passengar.</i> </td>
+      <td> 8-11 Days: $1799.99<i>per passengar.</i> </td>
+      <td> 8-11 Days: $999.99<i>per passengar.</i> </td>    
+    </tr> <!-- end of last row definition -->
+    </table> <!-- end of table definition -->
+    
+  
+</body>
+</html>
