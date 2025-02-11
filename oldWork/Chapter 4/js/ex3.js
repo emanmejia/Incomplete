@@ -1,4 +1,4 @@
-// PARITY
+
 // Ask the user for the number of turns
 let numberOfTurns = prompt("How many turns should the carousel run?");
 numberOfTurns = Number(numberOfTurns); // Convert the input to a number
