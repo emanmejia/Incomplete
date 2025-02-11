@@ -3,8 +3,8 @@
 
 /* What we're selecting */
 h1 {
-  font-family: 'Courier New';
-  color: red;
+  font-family: 'Impact';
+  color: rgb(176, 203, 84);
 }
 
 body {
@@ -30,7 +30,7 @@ img {
 button {
   margin: 30px auto 0;
   padding: 20px 25px;
-  background-color: #F69680;
+  background-color: rgb(176, 203, 84);
   color: #2E1263;
   font-size: 14px;
   text-align: center;
