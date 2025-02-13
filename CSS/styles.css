@@ -1,0 +1,10 @@
+/* Set background color for the entire page */
+body {
+  background-color: #f4e3a7; /* Light CSULB Yellow background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  height: 100vh; /* Full viewport height */
+  display: block;
+}
