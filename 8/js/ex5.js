@@ -1,23 +1,9 @@
-const musketeers = ["Athos", "Porthos", "Aramis"];
-// Initially had these commented out but uncommenting to review full Output. 
-console.log(musketeers[0]); // "Athos"
-console.log(musketeers[1]); // "Porthos"
-console.log(musketeers[2]); // "Aramis"
-console.log(musketeers[3]); // UNDEFINED
+// Turning a string into an array.
 
-for (let i = 0; i < musketeers.length; i++) {
-  console.log(musketeers[i]);
-} // Shows each array element using a for loop.
+/*The JavaScript method Array.from() can be used to turn a string into an array. This array can further be traversed with the forEach() method. Just like the previous ones, this example shows the string letters one-by-one.*/
 
-musketeers.push("D'Artagnan"); // Adds the "D'Artagnan" value to the array.
-
-musketeers.forEach(musketeers => {
-  console.log(musketeers);
-}); // Shows each array element using the forEach() method
-
-
-musketeers.splice(2, 1); // remove 1 element starting at index 2.  This removes poor Aramis.
-
-for (const musketeer of musketeers) {
-  console.log(musketeer);
-} // Shows each array element using a for-of loop, without Aramis. 
+const name = "Emmanuel"
+const nameArray = Array.from(name);
+nameArray.forEach(letter => {
+  console.log(letter);
+});
