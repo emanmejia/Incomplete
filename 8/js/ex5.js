@@ -1,8 +1,9 @@
 const musketeers = ["Athos", "Porthos", "Aramis"];
-//console.log(musketeers[0]); // "Athos"
-//console.log(musketeers[1]); // "Porthos"
-//console.log(musketeers[2]); // "Aramis"
-//console.log(musketeers[3]); // UNDEFINED
+// Initially had these commented out but uncommenting to review full Output. 
+console.log(musketeers[0]); // "Athos"
+console.log(musketeers[1]); // "Porthos"
+console.log(musketeers[2]); // "Aramis"
+console.log(musketeers[3]); // UNDEFINED
 
 for (let i = 0; i < musketeers.length; i++) {
   console.log(musketeers[i]);

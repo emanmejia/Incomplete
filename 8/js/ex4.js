@@ -1,13 +1,44 @@
-// You can remove the last element of an array using the pop() method.
+// Strings as sets of characters.
+/* You may think of a string as an array of characters. Each character is identified by a number called an index, just as it does for an array. The same golden rules apply: 
+- The index of the first character in a string is 0, not 1.
+The higest index number is the string's length minus 1. 
+*/
 
-const movies = ["Rush Hour", "Rush Hour II", "Rush Hour III"];
-movies.pop(); // Remove the last array element
-console.log(movies.length) // 2 (the amount of movies that mattered in this Series.)
-console.log(movies[2]); // undefined
 
-// Alternatively, you can use the splice() method with two parameters: the first one is the index from which to begin removing, and the second one is the number of elements to remove.
-const movies2 = ["The Big Short", "Meet the Parents", "Roadhouse"];
-movies2.splice(0, 1); // remove 1 element starting at index 0
-console.log(movies2.length); // 2
-console.log(movies2[0]); // Meet the Parents
-console.log(movies2[1]); // Roadhouse
+// accessing a particular charactr by its index. 
+const sport = "basketball";
+console.log(sport[0]);
+console.log(sport[6]);
+console.log(sport[9]);
+console.log(sport[10]);
+
+// Iterating over a string
+const name = "Yossaphinie";
+console.log(name[0]); // "Y"
+console.log(name[1]); // "o"
+console.log(name[2]); // "s"
+console.log(name[3]); // "s"
+console.log(name[4]); // "a"
+console.log(name[5]); // "p"
+console.log(name[6]); // "h"
+console.log(name[7]); // "i"
+console.log(name[8]); // "n"
+console.log(name[9]); // "i"
+console.log(name[10]); // "e"
+
+console.log("--------") // Break
+
+// Very impracticle, we need to form concepts, like a Loop in this case.
+
+for (let i = 0; i < name.length; i++) {
+  console.log(name[i]);
+} // Shows each array element using a for loop.
+
+console.log("--------") // Break
+
+
+// new JavaScript evolution to iterate over a sring: the for-of loop.  The previous example may also be written:
+const name2 = "Emmanuel";
+for (const letter of name2) {
+  console.log(letter);
+}

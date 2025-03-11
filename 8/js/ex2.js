@@ -1,27 +1,15 @@
+// You may convert a string's text to lowercase by calling the toLowerCase() method. Alternatively, you may do the same with toUpperCase() to convert a string to uppercase.
 
-console.log("List of movies:")
+const originalWord = "Bora-Bora";
+console.log(originalWord);
 
+const lowercaseWord = originalWord.toLowerCase();
+console.log(lowercaseWord); // "bora-bora"
 
-// Iterating over an array using the 'for' loop method. 
-const movies = ["The Wolf of Wall Street", "Zootopia", "Babysitting"];
-for (let i = 0; i < movies.length; i++) {
-  console.log(movies[i]);
-}
+const uppercaseWord = originalWord.toUpperCase();
+console.log(uppercaseWord); // "BORA-BORA"
 
-// Iterating over an array using 'forEach()' method on the array.  
-const movies2 = ["Fast and Furious", "Dredd", "Blades of Glory"];
-movies2.forEach(movie2 => {
-  console.log(movie2);
-});
+// toLowerCase() and toUpperCase() are two string methods. Like every string method, both have no affect on the initial value and return a new string.
 
-// Previous example, rewritten with this method and a fat arrow function.
-const movies3 = ["Superbad", "Casino", "Good Will Hunting"];
-movies3.forEach(movies3 => {
-  console.log(movies3);
-});
+// It is IMPORTANT to understand that once created, a string value never changes:  strings are **immutable** in JavaScript. 
 
-// Previous example written with a 'for-of' loop 
-const movies4 = ["Fantastic Four", "Rush Hour II", "Mulholland Drive"];
-for (const movie of movies4) {
-  console.log(movie);
-}
