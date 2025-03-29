@@ -1,0 +1,6 @@
+/* Set background color for the entire page */
+body {
+  background-color: #e0bd40; /* Light CSULB Yellow background */
+  font-family: Calibri;
+  text-align: center;
+}
