@@ -26,7 +26,7 @@ function addLink() {
   
   links.push({ title, url, author });
   alert("Link added successfully!");
-}
+} // Had help finding how to add 'http://'
 
 function removeLink() {
   if (links.length === 0) {
