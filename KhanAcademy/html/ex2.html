@@ -3,7 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rabbit Season! - Mejia</title>
+  <title>CSS Basics - Mejia</title>
+  <style>
+    h1 {
+      color: rgb(175, 127, 143);
+      font-family:'Trebuchet MS';
+    }
+    h2 {
+      color: rgb(224, 233, 104);
+      font-family:'Franklin Gothic Medium';
+      font-style: oblique;
+    }
+
+    h2
+
+    ol {
+      color: rgb(146, 97, 32);
+      font-family: Georgia;
+      font-size:large;
+    }
+
+    body {
+      background-color: rgb(110, 206, 190);
+    }
+
+    p {
+      color: rgb(68, 5, 5);
+    }
+
+    #rabbits-basic-info {
+      background-color: dodgerblue;
+    }
+    .song-lyrics {
+      background-color:rgb(146, 97, 32)
+    }
+  </style>
 </head>
 <body>
   <h1>All about rabbits!</h1>
@@ -26,17 +60,26 @@
     <li>Thumper</li>
   </ol>
 
-  <h2>Basic Info</h2>
+  <h2 id="rabbits-basic-info">Basic Info</h2>
 
   <p>Rabbits are little creatures with long ears and puffy tails, and they move their nose up and down in an <em>adorable</em> way.  They eat the most orange vegetables in our world, and <strong>they reproduce more than any human <em>ever</em> has</strong>.</p>
 
   <h2>Songs</h2>
 
-  <p>Little Bunny Foo Foo, <br>
+  <p class ="song-lyrics">Little Bunny Foo Foo, <br>
     I don't want to see you <br>
     scooping up the field mice <br>
     and booping them on the <strong>head</strong>!
+  </p>  
+  
+  <p class ="song-lyrics">Random extra text,<br>
+    to fill up the space<br>
+    and test for a new paragraph<br>
+    using the same "song-lyrics" class name.
+  </strong>!
   </p>
+
+  <u><a href="../index.html">Back to Mejia's Home Page.</a></u>
 
   <h3></h3>
 </body>
