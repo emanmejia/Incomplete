@@ -47,3 +47,15 @@ console.log(false || "Hello");    // "Hello"
 console.log(undefined || "Hello"); // "Hello"
 console.log("" || "Hello");     // "Hello"
 console.log("Hello" || "Goodbye");  // "Hello"
+
+
+
+// "Not" operator - There is another opeator for when you know what you don't wnat: the not operator!  You'll use a ! for this. 
+
+const number3 = Number(prompt("Enter a third number:"));
+if (!(number3 > 100)) {
+  console.log(`${number3} is less than or equal to 100`);
+}
+
+console.log(!true); // false
+console.log(!false); // true
