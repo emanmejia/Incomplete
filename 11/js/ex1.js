@@ -1,7 +1,8 @@
 const links = [
   { title: "Mejia's Complete Coursework", url: "https://csulbmejia.netlify.app/", author: "Emmanuel Mejia" },
   { title: "2026 World Cup Website", url: "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026", author: "Mozilla Foundation" },
-  { title: "City of Long Beach Website", url: "https://longbeach.gov/", author: "Rex Richardson" }
+  { title: "City of Long Beach Website", url: "https://longbeach.gov/", author: "Rex Richardson" },
+  { title: "A & J Seafood Shack", url: "https://www.ajseafoodshack.com/", author: "Yossaphinie Seng" }
 ];
 
 function showLinks() {
