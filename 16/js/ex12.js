@@ -1,5 +1,5 @@
-const paragraphElement = document.querySelector('p');
-paragraphElement.style.color = 'red';
-paragraphElement.style.fontSize = '50px';
-paragraphElement.style.fontFamily = 'Arial';
-paragraphElement.style.backgroundColor = 'black';
+// Handling clicking on the forbidden link
+document.getElementById("forbidden").addEventListener("click", e => {
+  alert("Yes... But no.");
+  e.preventDefault(); // Cancels the default behavior
+});

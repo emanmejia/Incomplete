@@ -1,6 +1,4 @@
-
-const titleElement = document.querySelector("h3");  // Grab the first h3
-console.log(titleElement); // Show the first h3 element with the class "beginning"
-titleElement.classList.remove("beginning");
-titleElement.classList.add("title"); // renames titleElement
-console.log(titleElement); // Show the first h3 element with the class "title"
+// Show event type and target when the user clicks on the button
+document.getElementById("myButton").addEventListener("click", e => {
+  console.log(`Event type: ${e.type}, target: ${e.target}`);
+});

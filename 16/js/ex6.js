@@ -1,8 +1,8 @@
-// Creating and Setting Elements in the DOM
+// Show information on a keyboard event
+const keyboardInfo = e => {
+  console.log(`Keyboard event: ${e.type}, key: ${e.keyCode}`);
+};
 
-const pythonElement = document.createElement("li"); // Create an li element
-pythonElement.id = "python"; // Set the id attribute to "python"
-pythonElement.textContent = "Python"; // Set the text content to "Python"
-
-document.getElementById("languages").appendChild(pythonElement); // Insert the new element into the DOM
-
+// Integrate this function into key press and release:
+document.addEventListener("keydown", keyboardInfo);
+document.addEventListener("keyup", keyboardInfo);

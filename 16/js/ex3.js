@@ -1,7 +1,13 @@
-// Define the id attribute of the first title
-document.querySelector("h3").setAttribute("id", "title");
+const showMessage = () => {
+  alert("Hello!");
+};
 
-// Define the id attribute of the first title
-document.querySelector("h3").id = "title";
+// Access the button
+const buttonElement = document.getElementById("myButton");
 
-console.log(document.getElementById("title")); // Show the first h3 element with the id "title"
+// Listen to the "click" event
+buttonElement.addEventListener("click", showMessage);
+
+
+// Remove the handler for the click event
+buttonElement.removeEventListener("click", showMessage);

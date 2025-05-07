@@ -1,22 +1,41 @@
-// Creating and Setting Elements in the DOM
+// This one was a bit difficult, I figured out how to remove the button but referenced the interent for the DOMContentLoaded / addEventListener portion. 
 
-const cElement = document.createElement("li"); // Create an li element
-cElement.id = "c"; // Set the id attribute to "c"
-cElement.textContent = "C"; // Set the text content to "C"
+document.addEventListener('DOMContentLoaded', function() {
+  const questions = [
+    {
+      statement: "2+2?",
+      answer: "2+2 = 4"
+    },
+    {
+      statement: "In which year did Christopher Columbus discover America?",
+      answer: "1492"
+    },
+    {
+      statement:
+        "What occurs twice in a lifetime, but once in every year, twice in a week but never in a day?",
+      answer: "The E letter"
+    }
+  ];
 
-const pythonElement = document.createElement("li"); // Create an li element
-pythonElement.id = "python"; // Set the id attribute to "python"
-pythonElement.textContent = "Python"; // Set the text content to "Python"
+  const questionsContainer = document.createElement('div'); // Create a container for the questions
+  document.body.appendChild(questionsContainer); // Append it to the body (you might want to target a specific div instead)
 
-const rubyElement = document.createElement("li"); // Create an li element
-rubyElement.id = "ruby"; // Set the id attribute to "ruby"
-rubyElement.textContent = "Ruby"; // Set the text content to "Ruby"
+  questions.forEach((question, index) => {
+    const questionDiv = document.createElement('div');
+    questionDiv.classList.add('question-item'); // Add a class for potential styling
 
-document.getElementById("languages").appendChild(cElement); // Insert the new element into the DOM
-document.getElementById("languages").appendChild(pythonElement); // Insert the new element into the DOM
-document.getElementById("languages").appendChild(rubyElement); // Insert the new element into the DOM
+    const statementElement = document.createElement('p');
+    statementElement.textContent = `${index + 1}. ${question.statement}`;
 
-document.getElementById(`languages`).insertAdjacentHTML("afterBegin", '<li id="javascript">JavaScript</li>'); // Add an element to beginning of the list. 
+    const answerButton = document.createElement('button');
+    answerButton.textContent = 'Show the answer';
+    answerButton.addEventListener('click', function() {
+      statementElement.textContent = `${index + 1}. ${question.answer}`;
+      answerButton.remove(); // Remove the button after showing the answer
+    });
 
-
-document.getElementById(`languages`).insertAdjacentHTML("afterEnd", '<p id="java">Here is a more complete <a href="https://en.wikipedia.org/wiki/List_of_programming_languages">list</a> of languages.</p>'); // Add an element to end of the list.
+    questionDiv.appendChild(statementElement);
+    questionDiv.appendChild(answerButton);
+    questionsContainer.appendChild(questionDiv);
+  });
+});

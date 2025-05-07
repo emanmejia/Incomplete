@@ -1,17 +1,27 @@
-const paragraphElement = document.querySelector('p');
-paragraphElement.style.color = 'red';
-paragraphElement.style.fontSize = '50px';
-paragraphElement.style.fontFamily = 'Arial';
-paragraphElement.style.backgroundColor = 'black';
+// Get references to the button and the list
+const addButton = document.getElementById("addButton");
+const dessertList = document.getElementById("desserts");
 
+// Function to create a new list item with editing ability
+function addDessert(name) {
+  const li = document.createElement("li");
+  li.textContent = name;
 
-const paragraphElements = document.getElementsByTagName("p");
-console.log(paragraphElements[0].style.color); // "red"
-console.log(paragraphElements[1].style.color); // "green"
-console.log(paragraphElements[2].style.color); // Show an empty string, this is because Blue was pulled from the CSS sheet and not set in the style attribute.
+  // This will allow the user to edit the dessert name by clicking on it
+  li.addEventListener("click", () => {
+    const newName = prompt("Edit the dessert name:", li.textContent);
+    if (newName !== null && newName.trim() !== "") {
+      li.textContent = newName;
+    }
+  });
 
+  dessertList.appendChild(li);
+}
 
-const paragraphStyle = getComputedStyle(document.getElementById("para"));
-console.log(paragraphStyle.color); // "rgb(0, 0, 255)" // Color blue from CSS sheet
-console.log(paragraphStyle.fontStyle); // "italic"
-console.log(paragraphStyle.fontSize); // "50px"
+// Add new dessert when button is clicked
+addButton.addEventListener("click", () => {
+  const dessertName = prompt("Enter a dessert:");
+  if (dessertName !== null && dessertName.trim() !== "") {
+    addDessert(dessertName);
+  }
+});

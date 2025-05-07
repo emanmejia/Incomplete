@@ -1,8 +1,28 @@
-// Creating and Setting Elements in the DOM
+// Return the name of the mouse button
+const getMouseButton = code => {
+  let button = "unknown";
+  switch (code) {
+    case 0: // 0 is the code for the left mouse button
+      button = "left";
+      break;
+    case 1: // 1 is the code for the middle mouse button
+      button = "middle";
+      break;
+    case 2: // 2 is the code for the right button
+      button = "right";
+      break;
+  }
+  return button;
+};
 
-const pythonElement = document.createElement("li"); // Create an li element
-pythonElement.id = "python"; // Set the id attribute to "python"
-pythonElement.textContent = "Python"; // Set the text content to "Python"
+// Show info about mouse event
+const mouseInfo = e => {
+  console.log(
+    `Mouse event: ${e.type}, button: ${getMouseButton(
+      e.button
+    )}, X: ${e.clientX}, Y: ${e.clientY}`
+  );
+};
 
-document.getElementById("languages").appendChild(pythonElement); // Insert the new element into the DOM
-console.log(`Same as example 6, but it would be more effort to change 7-14, so here is an encore my friend!`)
+// Add mouse click event listener
+document.addEventListener("click", mouseInfo);

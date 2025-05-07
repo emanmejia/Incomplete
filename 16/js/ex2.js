@@ -1,2 +1,5 @@
-// Modify the title's text content
-document.querySelector("h3").textContent += " for programming";
+// Show a message when the user clicks on the button
+document.getElementById("myButton").addEventListener("click", () => {
+  alert("Hello!");
+});
+

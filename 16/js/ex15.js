@@ -1,28 +1,20 @@
-const newspapers = [
-  "https://www.nytimes.com",
-  "https://www.washingtonpost.com", 
-  "https://www.lbpost.com",
-  "https://www.bloomberg.com",
-  "https://www.reuters.com",
-  "https://www.theguardian.com",
-]
+// Get references to elements
+const myButton = document.getElementById("myButton");
+const deactivateButton = document.getElementById("deactivate");
+const clickCountSpan = document.getElementById("clickCount");
 
-// Get the container div
-const contentDiv = document.getElementById("content");
+let count = 0;
+let isCounting = true;
 
-// Create a <ul> element
-const list = document.createElement("ul");
-
-// Create clickable links as list items
-newspapers.forEach(url => {
-  const li = document.createElement("li");
-  const a = document.createElement("a");
-  a.href = url;
-  a.textContent = url;
-  a.target = "_blank";
-  li.appendChild(a);
-  list.appendChild(li);
+// Handle clicks on the "Click me!" button
+myButton.addEventListener("click", () => {
+  if (isCounting) {
+    count++;
+    clickCountSpan.textContent = count;
+  }
 });
 
-// Add the list to the page
-contentDiv.appendChild(list);
+// Handle clicks on the "Désactivate counting" - french deactivate button.  PSG makes it to champions league and here we are changing buttons now!  haha.
+deactivateButton.addEventListener("click", () => {
+  isCounting = false;
+});
