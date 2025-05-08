@@ -1,17 +1,14 @@
-// Move the block to the left
-const moveBlock = () => {
-  // Convert the left position of the block (value of the form "XXpx") to a number
-  const xBlock = parseFloat(getComputedStyle(blockElement).left);
-  // Move the block to the right
-  blockElement.style.left = (xBlock + movement) + "px";
-  // Have the browser call moveBlock as soon as possible
-  requestAnimationFrame(moveBlock);
-};
-
-const blockElement = document.getElementById("block");
-
-// Movement value in pixels
-const movement = 7;
-
-// Start the animation
-requestAnimationFrame(moveBlock);
+fetch(
+  "https://raw.githubusercontent.com/bpesquet/thejsway/master/resources/movies.json"
+)
+  .then(response => response.json()) // Access and return response's JSON content
+  .then(movies => {
+    // Iterate on the movie array
+    movies.forEach(movie => {
+      // Display title of each movie
+      console.log(movie.title);
+    });
+  })
+  .catch(err => {
+    console.error(err.message);
+  });

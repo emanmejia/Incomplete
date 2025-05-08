@@ -1,25 +1,31 @@
-// Count down the counter until 0
-const decreaseCounter = () => {
-  // Convert counter text to a number
-  const counter = Number(counterElement.textContent);
-  if (counter > 1) {
-    // Decrease counter by one
-    counterElement.textContent = counter - 1;
-  }
-  else {
-    // Cancel the repeated execution
-    clearInterval(intervalId);
-    // Modify the page title
-    const titleElement = document.getElementById("title");
-    titleElement.textContent = "BOOM!!";
-    // Modify the title after 2 seconds
-    setTimeout(() => {
-      titleElement.textContent = "Everything's broken now :(";
-    }, 2000);
-  }
+// Define a JavaScript object
+const plane = {
+  manufacturer: "Airbus",
+  model: "A320"
 };
+console.log(plane); // Display the object
 
-const counterElement = document.getElementById("counter");
+const planeText = JSON.stringify(plane);
+console.log(planeText); // Display the object as a JSON string
 
-// Call the decreaseCounter function every second (1000 milliseconds)
-const intervalId = setInterval(decreaseCounter, 1000);
+console.log(JSON.parse(planeText)); // Display the object
+
+
+// These methods can also handle JSON arrays.
+// Define an array containing two objects
+const planes = [
+  {
+    manufacturer: "Airbus",
+    model: "A320"
+  },
+  {
+    manufacturer: "Boeing",
+    model: "737"
+  }
+];
+console.log(planes); // Display the array of objects
+
+const planesText = JSON.stringify(planes);
+console.log(planesText); // Display the array as a JSON string
+
+console.log(JSON.parse(planesText)); // Display the array of objects

@@ -1,13 +1,7 @@
-// Count down the counter
-const decreaseCounter = () => {
-  // Convert counter text to a number
-  const counter = Number(counterElement.textContent);
-  // Decrease counter by one
-  counterElement.textContent = counter - 1;
-};
-
-const counterElement = document.getElementById("counter");
-
-// Call the decreaseCounter function every second (1000 milliseconds)
-setInterval(decreaseCounter, 1000);
-
+fetch(
+  "https://raw.githubusercontent.com/bpesquet/thejsway/master/resources/languages.txt"
+)
+  .then(response => response.text()) // Access and return response's text content
+  .then(text => {
+    console.log(text); // Display file content in the console
+  });
