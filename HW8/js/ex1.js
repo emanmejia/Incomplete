@@ -1,14 +1,18 @@
-//Complete the code to display all body nodes (including text)
-//Complete the following functions
-//Displays all body nodes
-const bodyNodes = () => {
-  const body = document.body;
-  const nodes = body.childNodes;
+const paintingsData = [
+  { name: "The Starry Night", year: 1889, artist: "Vincent Van Gogh" },
+  { name: "The Scream", year: 1893, artist: "Edvard Munch" },
+  { name: "Guernica", year: 1937, artist: "Pablo Picasso" }
+];
 
-  nodes.forEach(node => {
-      console.log(node);
-  });
-}
+const paintingsBody = document.getElementById("paintings-body");
 
-bodyNodes();
+paintingsData.forEach(painting => {
+  const row = paintingsBody.insertRow();
+  const nameCell = row.insertCell();
+  const yearCell = row.insertCell();
+  const artistCell = row.insertCell();
 
+  nameCell.textContent = painting.name;
+  yearCell.textContent = painting.year;
+  artistCell.textContent = painting.artist;
+});

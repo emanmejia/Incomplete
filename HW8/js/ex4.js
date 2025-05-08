@@ -1,14 +1,23 @@
-// Get a reference to the 'links' unordered list.
-const linksList = document.getElementById('links');
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('myForm');
+  const dataTableBody = document.getElementById('data-table-body');
+  const outputContainer = document.getElementById('output-container');
 
-// Create a new list item (<li>) element.
-const newListItem = document.createElement('li');
-const cobLink = document.createElement('a');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent the default form submission
 
-cobLink.href = 'https://www.csulb.edu/college-of-business'; // Correct URL
-cobLink.textContent = 'CSULB College of Business'; // Correct text
+    const formData = new FormData(form);
+    dataTableBody.innerHTML = ''; // Clear any previous table rows
 
+    for (const [key, value] of formData.entries()) {
+      const row = dataTableBody.insertRow();
+      const keyCell = row.insertCell();
+      const valueCell = row.insertCell();
 
-newListItem.appendChild(cobLink);
-const isListItem = document.getElementById('is');
-linksList.insertBefore(newListItem, isListItem);
+      keyCell.textContent = key;
+      valueCell.textContent = value;
+    }
+
+    outputContainer.style.display = 'block'; // Make the table visible
+  });
+});

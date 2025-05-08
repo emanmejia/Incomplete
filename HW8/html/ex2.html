@@ -3,33 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chapter 6 HW - Exercise 2 - 400 Level Course</title>
-  <link rel="stylesheet" href="../css/styles3.css">
+  <title>JSway HW8 - Ex 2</title>
+  <link rel="stylesheet" href="/css/styles7.css">
+  <style>
+    #profile-container {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+    }
+
+    #profile-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    #profile-info p {
+      margin: 5px 0;
+    }
+  </style>
 </head>
 <body>
-  <h1>CSULB IS Courses</h1>
-  <p>Fall Classes Taken:</p>
-  <ul class="iscourses" id="fall">
-      <li class="300level">IS 300</li>
-      <li class="300level">IS 310</li>
-      <li class="300level">IS 340</li>
-      <li class="300level">IS 385</li>
-  </ul>
-  <p>Spring Classes Taken:</p>
-  <ul class="iscourses" id="spring">
-      <li class="300level">IS 320</li>
-      <li class="300level">IS 380</li>
-      <li class="400level">IS 445</li>
-      <li class="400level">IS 480</li>
-  </ul>
-  <h2>Links</h2>
-  <ul id="links">
-      <li id="csulb"><a href="http://www.csulb.edu">CSULB Home Page</a></li>
-      <li id="is"><a href="https://www.csulb.edu/college-of-business/information-systems">Information Systems</a></li>
-  </ul>
 
+  <div>
+    <label for="github-login">GitHub Login:</label>
+    <input type="text" id="github-login">
+    <button id="fetch-profile">Show Profile</button>
+  </div>
 
+  <div id="profile-container" style="display: none;">
+    <img id="profile-image" src="" alt="Profile Picture">
+    <div id="profile-info">
+      <h2 id="profile-name"></h2>
+      <p id="profile-website"></p>
+    </div>
+  </div>
+
+  <script src="../js/ex2.js"></script><br><br>
+
+  
   <a href="../index.html">Back to home page.</a>
-  <script src="../js/ex2.js"></script>
 </body>
 </html>

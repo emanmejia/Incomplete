@@ -3,32 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chapter 6 HW - Exercise 3 - Paragraph Elements</title>
-  <link rel="stylesheet" href="../css/styles3.css">
+  <title>JSway HW8 - Ex3</title>
+  <link rel="stylesheet" href="/css/styles7.css">
 </head>
 <body>
-  <h1>CSULB IS Courses</h1>
-  <p>Fall Classes Taken:</p>
-  <ul class="iscourses" id="fall">
-      <li class="300level">IS 300</li>
-      <li class="300level">IS 310</li>
-      <li class="300level">IS 340</li>
-      <li class="300level">IS 385</li>
-  </ul>
-  <p>Spring Classes Taken:</p>
-  <ul class="iscourses" id="spring">
-      <li class="300level">IS 320</li>
-      <li class="300level">IS 380</li>
-      <li class="400level">IS 445</li>
-      <li class="400level">IS 480</li>
-  </ul>
-  <h2>Links</h2>
-  <ul id="links">
-      <li id="csulb"><a href="http://www.csulb.edu">CSULB Home Page</a></li>
-      <li id="is"><a href="https://www.csulb.edu/college-of-business/information-systems">Information Systems</a></li>
-  </ul>
+  <h1>Tell Us About Your Travels!</h1>
+  <h2>Old API link doesn't work, tried other sources with a few issues.</h2>
 
+  <div>
+    <label for="name">Your Name:</label>
+    <input type="text" id="name"><br><br>
+  </div>
+
+  <h2>Visited Countries:</h2>
+  <div id="countries-container">
+    <div class="country-input">
+      <label for="country-name-0">Country Name:</label>
+      <input type="text" class="country-name" id="country-name-0">
+      <label for="country-year-0">Year Visited:</label>
+      <input type="number" class="country-year" id="country-year-0">
+    </div>
+  </div>
+
+  <button id="add-country">Add Another Country</button><br><br>
+  <button id="submit-travel-info">Submit Travel Info</button>
+
+  <div id="message"></div>
+
+  
+  
+  <script src="../js/ex3.js"></script><br><br>
+
+  
   <a href="../index.html">Back to home page.</a>
-  <script src="../js/ex3.js"></script>
 </body>
 </html>
