@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JSway Chapter 17 - Ex 9</title>
+  <title>JSway Chapter 17 - Ex 2</title>
   <link rel="stylesheet" href="/css/styles3.css">
 </head>
 <body>
@@ -11,18 +11,18 @@
     <h1>Signup form</h1>
     <p>
       <label for="username">Username</label>:
-      <input type="text" name="username" id="username" required>
-      <span id="usernameHelp"></span>
+      <input type="text" name="username" id="username" required placeholder="username">
+      <span id="usernameHelp" style="font-size: 9pt;"></span>
     </p>
     <p>
       <label for="password">Password</label>:
       <input type="password" name="password" id="password" required>
-      <span id="passwordHelp"></span>
+      <span id="passwordHelp" style="font-size: 9pt;"></span>
     </p>
     <p>
       <label for="emailAddress">Email address</label>:
       <input type="email" name="emailAddress" id="emailAddress" required placeholder="user@domain">
-      <span id="emailHelp"></span>
+      <span id="emailHelp" style="font-size: 9pt;"></span>
     </p>
     <p>
       <input type="checkbox" name="confirmation" id="confirmation">
@@ -43,17 +43,16 @@
       <label for="nationality">Nationality</label>:
       <select name="nationality" id="nationality">
         <option value="US" selected>American</option>
-        <option value="FR">French</option>
-        <option value="ES">Spanish</option>
+        <option value="PR">Puerto Rican</option>
+        <option value="MX">Mexican</option>
         <option value="XX">Other</option>
       </select>
     </p>
   
     <input type="submit" value="Submit">
     <input type="reset" value="Cancel">
-  </form><br><br>
+  </form>
   <a href="../index.html">Back to home page.</a>
-  <h5>Check console.log and js file for Regeluar expression to validate email addresses.<br><br><a href="https://regex101.com/">Visit regex101.com</a></h5>
-  <script src="../js/ex9.js"></script>
+  <script src="../js/ex2.js"></script>
 </body>
 </html>
