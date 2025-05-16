@@ -3,12 +3,13 @@ body {
   background-color: #e0bd40; /* Light CSULB Yellow background */
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 20px 0; /* Add some padding top and bottom */
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full viewport height */
+  align-items: flex-start; /* Align to the top instead of center */
+  min-height: 100vh; /* Use min-height instead of fixed height */
   text-align: center;
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 /* Container for the content */
@@ -19,6 +20,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 80%;
   max-width: 600px;
+  margin-top: 20px; /* Add some top margin */
 }
 
 h1, h2 {
