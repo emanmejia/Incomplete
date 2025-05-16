@@ -1,0 +1,17 @@
+
+body {
+  background-color: #1d7644; /* Light CSULB Yellow background */
+  font-family: Helvetica;
+
+}
+
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center; /* Center align text */
+}
+
+.divisible-by-4 {
+  background-color: lightblue;
+}
