@@ -1,0 +1,75 @@
+body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: #f8f8e6; 
+}
+
+p {
+  font-family: Calibri, Helvetica, sans-serif;
+}
+
+/* Header styles */
+h1, h2 {
+  font-family: 'Courier New', Courier, monospace;
+  color: red;
+}
+
+h3 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: green;
+}
+
+/* Link styles */
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+/* Input submit button styles */
+input[type="submit"] {
+  background-color: green;
+  color: whitesmoke;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: red;
+}
+
+input[type="submit"]:active {
+  background-color: green;
+}
+
+/* Unordered lists styles */
+ul {
+  list-style-type: square;
+}
+
+/* Ordered lists styles */
+ol {
+  list-style-type: lower-roman;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+table tr:hover {
+  background-color: rgb(78, 180, 208);
+}

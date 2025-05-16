@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Form</title>
+  <link rel="stylesheet" href="/css/styles7.css">
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    #data-table {
+      margin-top: 20px;
+      border-collapse: collapse;
+      width: 50%; /* Adjust as needed */
+    }
+    #data-table th, #data-table td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    #data-table th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sample Form</h1>
+
+  <form id="myForm">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+    </div>
+
+    <div>
+      <label>Payment Type:</label><br>
+      <input type="radio" id="payment-cash" name="payment-type" value="cash">
+      <label for="payment-cash">Cash</label><br>
+      <input type="radio" id="payment-credit" name="payment-type" value="credit">
+      <label for="payment-credit">Credit</label><br>
+      <input type="radio" id="payment-google-pay" name="payment-type" value="google-pay">
+      <label for="payment-google-pay">Google Pay</label><br>
+      <input type="radio" id="payment-apple-pay" name="payment-type" value="apple-pay">
+      <label for="payment-apple-pay">Apple Pay</label><br><br>
+    </div>
+
+    <div>
+      <input type="checkbox" id="sign-up" name="sign-up" value="yes">
+      <label for="sign-up">Sign me up for special promotions</label><br><br>
+    </div>
+
+    <div>
+      <label for="location">Preferred Location:</label>
+      <select id="location" name="location">
+        <option value="">-- Select --</option>
+        <option value="los-angeles">Los Angeles</option>
+        <option value="orange-county">Orange County</option>
+        <option value="riverside">Riverside</option>
+        <option value="san-diego">San Diego</option>
+      </select><br><br>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="output-container" style="margin-top: 20px;">
+    <h2>Form Data Values:</h2>
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th>Key</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody id="data-table-body">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="../js/ex4.js"></script>
+</body>
+</html>

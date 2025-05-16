@@ -1,0 +1,22 @@
+/* css/styles3.css */
+body {
+  background-color: #ffefb1; /* Light CSULB Yellow background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+table {
+  width: 100px; /* Adjust as needed */
+  border-collapse: collapse;
+  margin: 20px auto; /* Center the table */
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center; /* Center align text */
+}
+
+.divisible-by-4 {
+  background-color: lightblue;
+}
